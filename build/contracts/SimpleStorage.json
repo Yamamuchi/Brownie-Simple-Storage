@@ -7776,5 +7776,6 @@
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.9.0;\n\ncontract SimpleStorage {\n    uint256 favoriteNumber;\n\n    // This is a comment!\n    struct People {\n        uint256 favoriteNumber;\n        string name;\n    }\n\n    People[] public people;\n    mapping(string => uint256) public nameToFavoriteNumber;\n\n    function store(uint256 _favoriteNumber) public {\n        favoriteNumber = _favoriteNumber;\n    }\n\n    function retrieve() public view returns (uint256) {\n        return favoriteNumber;\n    }\n\n    function addPerson(string memory _name, uint256 _favoriteNumber) public {\n        people.push(People(_favoriteNumber, _name));\n        nameToFavoriteNumber[_name] = _favoriteNumber;\n    }\n}\n",
   "sourceMap": "66:638:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:638:0;;;;;;;",
   "sourcePath": "contracts/SimpleStorage.sol",
-  "type": "contract"
+  "type": "contract",
+  "_comment": "End of compiled contract"
 }
