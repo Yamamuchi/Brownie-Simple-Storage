@@ -1,4 +1,3 @@
-from lib2to3.pgen2.literals import simple_escapes
 from brownie import accounts, config, SimpleStorage
 
 
